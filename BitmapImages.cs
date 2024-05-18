@@ -11,6 +11,7 @@ namespace MinesweeperGame {
         // インスタンス
         private static BitmapImages singleton = null;
 
+        // 各種ビットマップ情報
         public Bitmap[] DIGIT = new Bitmap[11];
         public Bitmap[] SMILE = new Bitmap[4];
         public Bitmap[] MINE = new Bitmap[3];
@@ -54,11 +55,10 @@ namespace MinesweeperGame {
                 "empty.png"
         };
 
-
         /// <summary>
         /// インスタンスを作成
         /// </summary>
-        /// <returns>当クラスのインスタンスを返却する。</returns>
+        /// <returns>当クラスのインスタンスを返却する。シングルトン構成です。</returns>
         public static BitmapImages GetInstance() {
 
             if (singleton == null) {
@@ -68,7 +68,7 @@ namespace MinesweeperGame {
         }
 
         /// <summary>
-        /// コンストラクタ
+        /// BitmapImagesクラスのコンストラクタ。
         /// </summary>
         private BitmapImages() {
 
@@ -123,10 +123,10 @@ namespace MinesweeperGame {
         }
 
         /// <summary>
-        /// ビットマップ情報をファイルから読み取る
+        /// 指定したビットマップをアセンブリ情報から取得する。
         /// </summary>
-        /// <param name="file_path"></param>
-        /// <returns>ビットマップデータ</returns>
+        /// <param name="filePath"></param>
+        /// <returns>Bitmap形式で返却する。読み込めない場合はアプリケーションを終了する。</returns>
         private Bitmap GetBitmapFromAssembly(string filePath) {
 
             try {
@@ -140,6 +140,5 @@ namespace MinesweeperGame {
             }
             return null;
         }
-
     }
 }

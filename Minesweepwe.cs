@@ -57,7 +57,7 @@ namespace MinesweeperGame {
 		public static readonly string EASY_MENU = "Easy 9x9";
 		public static readonly string MEDIUM_MENU = "Medium 16x16";
 		public static readonly string EXPART_MENU = "Expart 30x16";
-		//
+		// アプリケーション終了
 		public static readonly string EXIT_MENU = "Exit";
 
 		// ヘルプメニュー

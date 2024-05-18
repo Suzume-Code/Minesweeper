@@ -8,7 +8,7 @@ using System.Security.Permissions;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("Minesweeper")]
+[assembly: AssemblyTitle("Minesweeper Classic")]
 [assembly: AssemblyDescription("自作リソース生成")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]

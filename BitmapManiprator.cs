@@ -20,11 +20,17 @@ namespace MinesweeperGame {
 		private BitmapImages _BITMAP_IMAGES = BitmapImages.GetInstance();
 		private Games _GAMES = Games.GetInstance();
 
+		/// <summary>
+		/// BitmapManipratorクラスのコンストラクタ
+		/// </summary>
 		public BitmapManiprator() {
 
 			BitmapSizeChange();
 		}
 
+		/// <summary>
+		/// 難易度が変更された場合に呼び出し、Bitmapを再作成する。
+		/// </summary>
 		public void BitmapSizeChange() {
 
 			Size cellSize = _GAMES.CellSize();

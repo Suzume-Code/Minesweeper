@@ -25,7 +25,7 @@ namespace MinesweeperGame {
 
 
 		/// <summary>
-		/// MainFormクラスのコンストラクタ
+		/// MainFormクラスのコンストラクタ。
 		/// </summary>
 		public MainForm() {
 
@@ -300,34 +300,37 @@ namespace MinesweeperGame {
 		}
 
 		/// <summary>
-		/// フォームサイズを変更する。
+		/// フォームサイズを変更する。ClientSizeを変更することで、フォームリサイズイベントを発生させる。
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
 		private void NormalScreenSize(object sender, EventArgs e) {
 
+			// リアルサイズでBitmapをImageに投影する。
 			Settings.SCALING_FACTOR = 1;
 			this.ClientSize = GetFormSize();
         }
 
 		/// <summary>
-		/// フォームサイズを変更する。
+		/// フォームサイズを変更する。ClientSizeを変更することで、フォームリサイズイベントを発生させる。
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
 		private void DoubleScreenSize(object sender, EventArgs e) {
 
+			// ２倍サイズでBitmapをImageに投影する。
 			Settings.SCALING_FACTOR = 2;
 			this.ClientSize = GetFormSize();
         }
 
 		/// <summary>
-		/// フォームサイズを変更する。
+		/// フォームサイズを変更する。ClientSizeを変更することで、フォームリサイズイベントを発生させる。
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
 		private void MaxScreenSize(object sender, EventArgs e) {
 
+			// ４倍サイズでBitmapをImageに投影する。
 			Settings.SCALING_FACTOR = 4;
 			this.ClientSize = GetFormSize();
         }

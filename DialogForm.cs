@@ -9,7 +9,7 @@ namespace MinesweeperGame {
     public class DialogForm : Form {
 
 		/// <summary>
-		/// DialogFormクラスのコンストラクタ
+		/// DialogFormクラスのコンストラクタ。
 		/// </summary>
 		public DialogForm() {
 
@@ -45,6 +45,11 @@ namespace MinesweeperGame {
             this.Controls.Add(label);
 		}
 
+		/// <summary>
+		/// クリックイベント：ダイアログフォームを閉じる。
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
         private void Form_Click(object sender, EventArgs e) {
 
             this.Close();
